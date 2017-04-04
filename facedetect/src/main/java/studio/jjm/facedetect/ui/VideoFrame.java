@@ -3,6 +3,7 @@ package studio.jjm.facedetect.ui;
 import java.awt.BorderLayout;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
+import java.io.File;
 
 import javax.swing.JFrame;
 
@@ -16,7 +17,7 @@ public class VideoFrame extends JFrame implements WindowListener{
 	 */
 	static{
 //      System.loadLibrary(Core.NATIVE_LIBRARY_NAME) ;        
-	    System.load("F:\\git\\git\\code\\facedetect\\src\\main\\resources\\opencv_java246.dll");
+	    System.load(System.getProperty("user.dir")+File.separator+"src"+File.separator+"main"+File.separator+"resources"+File.separator+"opencv_java246.dll");
 	}
 	private static final long serialVersionUID = 1L;
 	FrameCanvas frameCanvas;
